@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="surname">Прізвище:</label>
+        <input type="text" id="surname" required> 
+        <br>
+        <label for="mail">Ел. Пошта</label>
+        <input type="email" id="mail" required>
+        <br>
+        <label for="teleph">Номер Телефону</label>
+        <input type="tel" id="teleph" required>
+        <br>
+        <label for="kst">К-сть товару:</label>
+        <input type="number" id="kst" required max="10">
+        <br>
+        <label for="adres">Адреса доставки:</label>
+        <input type="text" id="adres" required minlength="10">
+        <br>
+
+        <label for="dostavka">Оберіть спосіб доставки:</label>
+        <br>
+        <input required type="radio" id="samovivoz" name="dostavka">
+        <label for="samovivoz">Самовивіз</label>
+        <br>
+        <input type="radio" id="poshtomat" name="dostavka">
+        <label for="poshtomat">Поштомат</label>
+        <br>
+        <input type="radio" id="curier" name="dostavka">
+        <label for="curier">Кур'єр</label>
+        <br>
+
+        <label>Додаткові параметри:</label>
+        <br>
+        <input type="checkbox" id="upakovka" >
+        <label for="upakovka">Подарункова упаковка</label>
+        <br>
+        <input type="checkbox" id="garantiya" >
+        <label for="garantiya">Додаткова гарантія</label>
+        <br>
+        <input type="checkbox" id="EsEmEs">
+        <label for="EsEmEs">SMS-повідомлення</label>
+        <br>
+        <input type="checkbox" id="dzvinok">
+        <label for="dzvinok">Телефонний дзвінок перед доставкою</label>
+        <br>
+
+        <label for="oplata">Виберіть спосіб оплати:</label>
+        <select id="oplata" required>
+            <option value="karta">Оплата карткою</option>
+            <option value="otrim">Оплата при отриманні</option>
+            <option value="bank">Банківський переказ</option>
+        </select>
+        <br>
+        <label for="coment">коментар до замовлення:</label> <br>
+        <textarea maxlength="200" id="coment" rows="1"></textarea>
+        <br>
+        <button type="submit">Оформити замовлення</button>
+    </form>
+</body>
+</html>
